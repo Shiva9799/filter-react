@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+// import InternCards from './Components/InternCards';
+// import Sort from './Components/Sort';
+// import Filtersection from './Components/FilterSection';
+import Intern from './Components/Intern';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Intern/>
+
+      {/* <div className='intern'>
+        <div className='filters'>
+          <Filtersection />
+        </div>
+        <div className='search-filter'>
+          <Sort />
+        </div>
+      </div> */}
+    </>
   );
-}
+
+};
 
 export default App;
